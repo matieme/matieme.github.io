@@ -1,33 +1,660 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Matias Milewski's Portfolio</title>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
-      type="text/javascript"
-    ></script>
+<!--suppress ALL -->
+<html lang='en' dir='ltr'>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-  </head>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='Portfolio' content='Matias Milewski Portfolio'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+    <title>Matias Milewski</title>
+    <link rel='icon' href='assets/images/title-logo.png' type='image/icon'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'
+          integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous'>
+    <link rel='stylesheet' href='stylesheets/style.css'>
+    <link rel='stylesheet' href='stylesheets/home.css'>
+    <link rel='stylesheet' href='stylesheets/about.css'>
+    <link rel='stylesheet' href='stylesheets/skills.css'>
+    <link rel='stylesheet' href='stylesheets/contact.css'>
+    <link rel='stylesheet' href='stylesheets/modals.css'>
+    <link rel='stylesheet' href='stylesheets/scrollEffects.css'>
+    <link rel='stylesheet' href='stylesheets/owl.carousel.css'>
+    <link rel='stylesheet' href='stylesheets/owl.theme.default.min.css'>
 
-  <body>
-    <h1>
-      <a
-        href=""
-        class="typewrite"
-        data-period="1500"
-        data-type='[ "Hi, Im Matias.", "This is a porfolio in progress!" ]'
-      >
-        <span class="wrap"></span>
-      </a>
-    </h1>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="./js/script.js"></script>
-  </body>
+</head>
+
+<body data-spy='scroll' data-target='#navbar-scrollspy' data-offset='89'>
+<div class='spinner-wrapper'>
+    <div class='spinner'></div>
+</div>
+
+<div id='all-content'>
+    <div class='bg-box'></div>
+
+    <header>
+        <a class='navbrand' href='#home'>
+            <span class='navbrand-icon'>M</span>atias Milewski
+        </a>
+
+        <div class='menu-wrap'>
+            <input type='checkbox' class='toggler'>
+            <div id='hamburger' class='hamburger'>
+                <div id='hamburger-lines'></div>
+            </div>
+            <div class='menu'>
+                <div id='menusub1'>
+                    <div id='menusub2'>
+                        <ul id='menu-links'>
+                            <li><a href='#home' id='home-link' data-text='Home'>Home</a></li>
+                            <li><a href='#about' id='about-link' data-text='About'>About</a></li>
+                            <li><a href='#skills' id='skills-link' data-text='Skills'>Skills</a></li>
+                            <li><a href='#contact' id='contact-link' data-text='Contact'>Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+
+    <div id='fullpage'>
+        <section class='vertical-scrolling homepage'>
+            <div class='home'>
+                <div class='home-left'>
+                    <div class='typeit-content'>
+                        <span class='typeit-subtitle'>HEY! I AM</span>
+                        <h2 class='typeit-title'>Matias Milewski</h2>
+                        <h1>I'm a <span id='typeit-quote'></span></h1>
+                    </div>
+                </div>
+                <div class='home-right'>
+                    <div class='title1'>
+                        <h1>Hello<span>&#33;</span></h1>
+                    </div>
+                    <div class='title2'>
+                        <h1>I am</h1>
+                    </div>
+                    <div class='title3'>
+                        <h1>Matias</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class='vertical-scrolling'>
+            <div id='aboutPage' class='about'>
+                <div class='about-left'>
+                    <div class='about-head'>
+                        <div class='about-headline'>
+                            <h1 id='about-headline'>About Me</h1>
+                        </div>
+                        <div class='lines'>
+                            <span class='top-line'></span>
+                            <span class='bottom-line'></span>
+                        </div>
+                    </div>
+                    <div class='about-content'>
+                        <div class='about-info'>
+                            <p>
+                                <span>I'm a game developer from Argentina, living in Montevideo, Uruguay.
+                                    I have a degree in videogames design and programming at
+                                    <a class='work-links' href='https://davinci.edu.ar/carreras/diseno-y-programacion-de-videojuegos' target='_blank'>
+                                        Davinci School
+                                    </a>
+                                    <span>
+                                        , Buenos Aires. I'm passionate about game design and technology. Right now I'm working as a Tech lead in
+                                    </span>
+                                    <a class='work-links' href='https://www.jamcity.com/' target='_blank'>
+                                        Jam City
+                                    </a>
+                                    <span>
+                                        for
+                                    </span>
+                                    <a class='work-links' href='https://www.jamcity.com/game/panda-pop/' target='_blank'>
+                                        Panda POP
+                                    </a>
+                                </span>
+                            </p>
+                        </div>
+                        <div class='about-links'>
+                                <span>
+                                    <a href='https://github.com/Charutito' target='_blank'><i
+                                            class='fab fa-github'></i></a>
+                                    <a href='https://www.linkedin.com/in/matias-milewski/' target='_blank'><i
+                                            class='fab fa-linkedin'></i></a>
+                                    <a href='https://www.instagram.com/matiasfederico/' target='_blank'><i
+                                        class='fab fa-instagram'></i></a>
+                                </span>
+                            <div class='about-btns'>
+                                <a href='assets/resume/CV_MatiasMilewski.pdf'
+                                   target='_blank' id='resume-link'>
+                                    <i class='fas fa-download'></i>
+                                    Resume
+                                </a>
+                            </div>
+                        </div>
+                        <div class='about-btns'>
+                            <a href='assets/resume/CV_MatiasMilewski.pdf'
+                               target='_blank' id='resume-link'>
+                                <i class='fas fa-download'></i>
+                                Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class='about-right'>
+                    <div class='about-image'>
+                        <img
+                            src='assets/images/profile-picture.webp'
+                            alt='Matias Milewski'
+                            style='padding-bottom: 25px; padding-top: 26px;'
+                        >
+                    </div>
+                    <div class='about-tabs'>
+                        <div class="tab-container">
+                            <div class='each-tab'>
+                                <div class='tab-logo'>
+                                    <div class='hexagon'>
+                                        <i class="fas fa-flag"></i>
+                                    </div>
+                                </div>
+                                <div class='tab-text'>
+                                    <div class='about-label'>
+                                        Leadership Skills
+                                    </div>
+                                    <div class='about-label-details'>
+                                        Motivate a team to do their best work
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-container">
+                            <div class='each-tab'>
+                                <div class='tab-logo'>
+                                    <div class='hexagon'>
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                </div>
+                                <div class='tab-text'>
+                                    <div class='about-label'>
+                                        Team Buddy
+                                    </div>
+                                    <div class='about-label-details'>
+                                        Github team workflow using feature branches & pull requests/code reviews. MVP & agile methodology for projects
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-container">
+                            <div class='each-tab'>
+                                <div class='tab-logo'>
+                                    <div class='hexagon'>
+                                        <i class="fas fa-kiss-wink-heart"></i>
+                                    </div>
+                                </div>
+                                <div class='tab-text'>
+                                    <div class='about-label'>
+                                        Learning & Sharing
+                                    </div>
+                                    <div class='about-label-details'>
+                                        My best coding experiences are the ones I have with other people. I strongly believe in team synergy
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-container">
+                            <div class='each-tab'>
+                                <div class='tab-logo'>
+                                    <div class='hexagon'>
+                                        <i class="fas fa-fist-raised"></i>
+                                    </div>
+                                </div>
+                                <div class='tab-text'>
+                                    <div class='about-label'>
+                                        Best Practices
+                                    </div>
+                                    <div class='about-label-details'>
+                                        Clean code, following SOLID, naming conventions & pattern principles
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class='vertical-scrolling'>
+            <div id='skillsPage' class='skills'>
+                <div class='skills-up'>
+                    <div class='skills-carousel owl-carousel owl-theme'>
+                        <div class='item'>
+                            <div class='skills-up-section'>
+                                <div class='up-grid-layout'>
+                                    <div class='grid-item'>
+                                        <div class='skill-logo'>
+                                            <img src='assets/images/icons/icons8-csharp-100.png' alt='skill'>
+                                        </div>
+                                        <div class='skill-title'>
+                                            C#
+                                        </div>
+                                    </div>
+                                    <div class='grid-item'>
+                                        <div class='skill-logo'>
+                                            <img src='assets/images/icons/icons8-unity-100.png' alt='skill'>
+                                        </div>
+                                        <div class='skill-title'>
+                                            UNITY
+                                        </div>
+                                    </div>
+                                    <div class='grid-item'>
+                                        <div class='skill-logo'>
+                                            <img src='assets/images/icons/icons8-3dsmax-100.png' alt='skill'>
+                                        </div>
+                                        <div class='skill-title'>
+                                            3DS MAX
+                                        </div>
+                                    </div>
+                                    <div class='grid-item'>
+                                        <div class='skill-logo'>
+                                            <img src='assets/images/icons/icons8-photoshop-100.png' alt='skill'>
+                                        </div>
+                                        <div class='skill-title'>
+                                            PHOTOSHOP
+                                        </div>
+                                    </div>
+                                    <div class='grid-item'>
+                                        <div class='skill-logo'>
+                                            <img src='assets/images/icons/icons8-python-100.png' alt='skill'>
+                                        </div>
+                                        <div class='skill-title'>
+                                            PYTHON
+                                        </div>
+                                    </div>
+                                    <div class='grid-item'>
+                                        <div class='skill-logo'>
+                                            <img src='assets/images/icons/icons8-git-100.png' alt='skill'>
+                                        </div>
+                                        <div class='skill-title'>
+                                            GIT
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='item'>
+                            <div class='skills-up-section'>
+                                <div class='up-grid-layout'>
+                                    <div class='grid-item'>
+                                        <div class='skill-logo'>
+                                            <img src='assets/images/icons/icons8-jenkins-100.png' alt='skill'>
+                                        </div>
+                                        <div class='skill-title'>
+                                            JENKINS
+                                        </div>
+                                    </div>
+                                    <div class='grid-item'>
+                                        <div class='skill-logo'>
+                                            <img src='assets/images/icons/icons8-html5-100.png' alt='skill'>
+                                        </div>
+                                        <div class='skill-title'>
+                                            HTML
+                                        </div>
+                                    </div>
+                                    <div class='grid-item'>
+                                        <div class='skill-logo'>
+                                            <i class='fab fa-css3-alt'></i>
+                                        </div>
+                                        <div class='skill-title'>
+                                            CSS3
+                                        </div>
+                                    </div>
+                                    <div class='grid-item'>
+                                        <div class='skill-logo'>
+                                            <img src='assets/images/icons/icons8-docker-100.png' alt='skill'>
+                                        </div>
+                                        <div class='skill-title'>
+                                            DOCKER
+                                        </div>
+                                    </div>
+                                    <div class='grid-item'>
+                                        <div class='skill-logo'>
+                                            <img src='assets/images/icons/icons8-unreal-100.png' alt='skill'>
+                                        </div>
+                                        <div class='skill-title'>
+                                            UNREAL
+                                        </div>
+                                    </div>
+                                    <div class='grid-item'>
+                                        <div class='skill-logo'>
+                                            <img src='assets/images/icons/icons8-javascript-100.png' alt='skill'>
+                                        </div>
+                                        <div class='skill-title'>
+                                            JAVASCRIPT
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='skills-left'>
+                    <div class='skills-head'>
+                        <div class='skills-headline'>
+                            <h1 id='skills-headline'>Skills</h1>
+                        </div>
+                        <div class='lines'>
+                            <span class='top-line'></span>
+                            <span class='bottom-line'></span>
+                        </div>
+                    </div>
+                    <div class='skills-content'>
+                        <div class='skills-info'>
+                            <p>
+                                Through my studies and experience, I've gained a solid understanding of development and game design, 
+                                and have dedicated a lot of my free time to apply these concepts to real-world scenarios and games.
+                            </p>
+                        </div>
+                        <div class='skills-tab hidden'>
+                            <a class="skills-panel">
+                                <div class="skills-panel-title">
+                                    INTERESTS
+                                </div>
+                                <div class="skills-panel-info">
+                                    <ul class="skills-list">
+                                        <li class="skills-item">Game Development</li>
+                                        <li class="skills-item">Videogames</li>
+                                        <li class="skills-item">Shaders & VFX</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class='skills-right'>
+                    <div class='skills-section'>
+                        <div class='grid-layout'>
+                            <div class='grid-item'>
+                                <div class='skill-logo'>
+                                    <img src='assets/images/icons/icons8-csharp-100.png' alt='skill'>
+                                </div>
+                                <div class='skill-title'>
+                                    C#
+                                </div>
+                            </div>
+                            <div class='grid-item'>
+                                <div class='skill-logo'>
+                                    <img src='assets/images/icons/icons8-unity-100.png' alt='skill'>
+                                </div>
+                                <div class='skill-title'>
+                                    UNITY
+                                </div>
+                            </div>
+                            <div class='grid-item'>
+                                <div class='skill-logo'>
+                                    <img src='assets/images/icons/icons8-3dsmax-100.png' alt='skill'>
+                                </div>
+                                <div class='skill-title'>
+                                    3DSMAX
+                                </div>
+                            </div>
+                            <div class='grid-item'>
+                                <div class='skill-logo'>
+                                    <img src='assets/images/icons/icons8-git-100.png' alt='skill'>
+                                </div>
+                                <div class='skill-title'>
+                                    GIT
+                                </div>
+                            </div>
+                            <div class='grid-item'>
+                                <div class='skill-logo'>
+                                    <img src='assets/images/icons/icons8-photoshop-100.png' alt='skill'>
+                                </div>
+                                <div class='skill-title'>
+                                    PHOTOSHOP
+                                </div>
+                            </div>
+                            <div class='grid-item'>
+                                <div class='skill-logo'>
+                                    <img src='assets/images/icons/icons8-python-100.png' alt='skill'>
+                                </div>
+                                <div class='skill-title'>
+                                    PYTHON
+                                </div>
+                            </div>
+                            <div class='grid-item'>
+                                <div class='skill-logo'>
+                                    <img src='assets/images/icons/icons8-unreal-100.png' alt='skill'>
+                                </div>
+                                <div class='skill-title'>
+                                    UNREAL
+                                </div>
+                            </div>
+                            <div class='grid-item'>
+                                <div class='skill-logo'>
+                                    <img src='assets/images/icons/icons8-jenkins-100.png' alt='skill'>
+                                </div>
+                                <div class='skill-title'>
+                                    JENKINS
+                                </div>
+                            </div>
+                            <div class='grid-item'>
+                                <div class='skill-logo'>
+                                    <img src='assets/images/icons/icons8-docker-100.png' alt='skill'>
+                                </div>
+                                <div class='skill-title'>
+                                    DOCKER
+                                </div>
+                            </div>
+                            <div class='grid-item'>
+                                <div class='skill-logo'>
+                                    <img src='assets/images/icons/icons8-html5-100.png' alt='skill'>
+                                </div>
+                                <div class='skill-title'>
+                                    HTML
+                                </div>
+                            </div>
+                            <div class='grid-item'>
+                                <div class='skill-logo'>
+                                    <img src='assets/images/icons/icons8-javascript-100.png' alt='skill'>
+                                </div>
+                                <div class='skill-title'>
+                                    JAVASCRIPT
+                                </div>
+                            </div>
+                            <div class='grid-item'>
+                                <div class='skill-logo'>
+                                    <i class='fab fa-css3-alt'></i>
+                                </div>
+                                <div class='skill-title'>
+                                    CSS3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class='vertical-scrolling'>
+            <div id='contactPage' class='contact'>
+                <div class='contact-left'>
+                    <div class='contact-head'>
+                        <div class='contact-headline'>
+                            <h1 id='contact-headline'>Contact Me</h1>
+                        </div>
+                        <div class='lines'>
+                            <span class='top-line'></span>
+                            <span class='bottom-line'></span>
+                        </div>
+                    </div>
+                    <div class='contact-content'>
+                        <div class='contact-info'>
+                            <p class="contact-brief">
+                                Feel free to reach out if you want to build something together,
+                                have a question, or just want to connect.
+                            </p>
+                            <div class='contact-tab hidden'>
+                                <div class='contact-label'>
+                                    Email:
+                                </div>
+                                <div class='contact-text'>
+                                    <p id='email'>
+                                        mf.milewski@gmail.com
+                                    </p>
+                                </div>
+                            </div>
+                            <div class='contact-tab hidden'>
+                                <div class='contact-label first-label'>
+                                    Phone:
+                                </div>
+                                <div class='contact-text'>
+                                    <p id='phone'>
+                                        +598 9362 9967
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="contact-tab visible">
+                                <a href='https://maps.google.com/?q=-34.913199,-56.165114' class="contact-panel">
+                                    <i class="fas fa-map-marker-alt contact-icon"></i> Montevideo - Uruguay, 11300
+                                </a>
+                                <a href="mailto:mf.milewski@gmail.com" target="_top" class="contact-panel">
+                                    <i class="fas fa-envelope contact-icon"></i> mf.milewski@gmail.com
+                                </a>
+                                <a href="tel:+59893629967" class="contact-panel">
+                                    <i class="fas fa-phone-alt contact-icon"></i> +598 9362 9967
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='contact-right'>
+                    <div class='contact-form-area'>
+                        <div class='contact-title'>
+                            <span>Have a question or want to work together?</span>
+                        </div>
+                        <div class='contact-form'>
+                            <div id='error_message'></div>
+                            <form name="complaint-form" action='https://formspree.io/f/mnqojwzl' method='POST' id='myform' onsubmit='return validate();'>
+                                <div class='input_field'>
+                                    <input
+                                            id='name'
+                                            name='Name'
+                                            type='text'
+                                            placeholder='Name'
+                                            autocomplete='off'
+                                            required
+                                    >
+                                </div>
+                                <div class='input_field'>
+                                    <input
+                                            id='subject'
+                                            name='_subject'
+                                            type='text'
+                                            placeholder='Subject'
+                                            autocomplete='off'
+                                            required
+                                    >
+                                </div>
+                                <div class='input_field'>
+                                    <input
+                                            id='email'
+                                            name='_replyto'
+                                            type='text'
+                                            placeholder='Email'
+                                            autocomplete='off'
+                                            required
+                                    >
+                                </div>
+                                <div class='input_field'>
+                                    <textarea
+                                            id='message'
+                                            name='Message'
+                                            placeholder='Message...'
+                                            rows='4'
+                                            autocomplete='off'
+                                            required
+                                    ></textarea>
+                                </div>
+                                <div class='submit-btn'>
+                                    <input
+                                            type='submit'
+                                            style='margin-top: 0px; line-height: normal;'
+                                    >
+                                </div>
+                                <input type="text" name="_gotcha" style="display:none" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <p id='scrollDown' class='scrollDown'>
+        <span>SCROLLDOWN</span>
+    </p>
+</div>
+
+
+<!-- partial -->
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js'
+        integrity='sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=' crossorigin='anonymous'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js'
+        integrity='sha256-XBVALc3QsDSQiDtiaBwNZ2rxCJTHzlUhhlDQ84J8bw8=' crossorigin='anonymous'></script>
+<script src='scripts/script.js'></script>
+<script src='scripts/modals.js'></script>
+<script src='scripts/scrollEffects.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/typed.js@2.0.11'></script>
+<script>
+    const typed = new Typed('#typeit-quote', {
+        strings: ['Game Developer', 'Programmer', 'Meme maker'],
+        typeSpeed: 50,
+        smartBackspace: true,
+        backSpeed: 35,
+        backDelay: 1000,
+        cursorChar: '&#x25AE;',
+        loop: true,
+        loopCount: Infinity,
+    });
+</script>
+<script src='scripts/jquery.min.js' type='text/javascript'></script>
+<script src='scripts/owl.carousel.js' type='text/javascript'></script>
+<script type='text/javascript'>
+    $('.projects-carousel').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: true,
+        items: 1,
+        dots: false,
+        smartSpeed: 300,
+        navText: ['<i class=\'fas fa-chevron-left\'></i>', '<i class=\'fas fa-chevron-right\'></i>']
+    });
+    $('.skills-carousel').owlCarousel({
+        loop: true,
+        margin: 0,
+        items: 1,
+        nav: false,
+        smartSpeed: 300
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        //Preloader
+        const preloaderFadeOutTime = 1000;
+
+        const hidePreloader = () => {
+            const preloader = $('.spinner-wrapper');
+            preloader.fadeOut(preloaderFadeOutTime);
+        }
+
+        hidePreloader();
+    });
+</script>
+</body>
+
 </html>
+<!-- partial -->
