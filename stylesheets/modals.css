@@ -9,12 +9,12 @@
     width: 100%;
     background-color: rgba(0, 0, 0, .5);
     cursor: pointer;
-    color: var(--bg-color-04)
+    color: #f7f6f5;
 }
 
 .modal-content {
     width: 24%;
-    max-width: 700px;
+    max-width: 750px;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, .2), 0 7px 20px 0 rgba(0, 0, 0, .17);
     animation-name: modalopen;
     animation-duration: 0.4s;
@@ -23,7 +23,7 @@
     left: 13%;
     top: 1px;
     border: 0;
-    background-color: var(--white-01);
+    background-color: #202225;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px
 }
@@ -43,7 +43,7 @@
 
 .modal-upper {
     background-color: var(--bg-color-03);
-    border-bottom: 3px solid var(--bg-color-03);
+    border-bottom: 3px solid #838383;
     width: 100%
 }
 
@@ -114,6 +114,10 @@
     color: var(--primary-color)
 }
 
+.modal-links{
+    color: rgb(255, 62, 85);
+}
+
 .divider {
     padding: .9px;
     margin: 7px 39px;
@@ -130,7 +134,7 @@
 
 .modal-buttons {
     padding-top: 10px;
-    padding-left: 16px
+    padding-left: 13px
 }
 
 .modal-buttons>a {

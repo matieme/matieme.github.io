@@ -418,7 +418,7 @@
 
 @media screen and (max-width: 600px) {
     .about-info {
-        font-size: 17px;
+        font-size: 16px;
         width: 83%;
     }
 }
@@ -441,11 +441,11 @@
     }
 
     .about-links > span {
-        font-size: 39px;
+        font-size: 35px;
     }
 
     .about-info {
-        font-size: 16px;
+        font-size: 15px;
         width: 79%;
     }
 }
@@ -465,6 +465,14 @@
 @media screen and (max-width: 380px) {
     .about-image > img {
         width: 272px;
+    }
+
+    .about-info{
+        font-size: 12px;
+    }
+
+    .about-links > span {
+        font-size: 30px;
     }
 
     .about-headline > h1 {
@@ -508,7 +516,7 @@
 
 @media screen and (max-height: 700px) and (orientation: portrait) {
     .about-left {
-        margin-top: -57px;
+        margin-top: -130px;
     }
 
     .about-image > img {
