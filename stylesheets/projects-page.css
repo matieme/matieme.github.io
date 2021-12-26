@@ -1187,6 +1187,13 @@ header .displayNone {
     }
 }
 
+@media screen and (max-width: 430px) {
+    .spinner {
+        top: 45%;
+        left: 41%;
+    }
+}
+
 @media screen and (max-width: 395px) {
     #menu-links li a {
         font-size: 42px;
@@ -1233,11 +1240,21 @@ header .displayNone {
     .projects-headline > h1 {
         margin-bottom: 0;
     }
+
+    .spinner {
+        top: 45%;
+        left: 42%;
+    }
 }
 
 @media screen and (max-width: 360px) {
     #menu-links li a {
         font-size: 42px;
+    }
+
+    .spinner {
+        top: 45%;
+        left: 40%;
     }
 }
 

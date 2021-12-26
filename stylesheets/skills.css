@@ -400,6 +400,12 @@
     }
 }
 
+@media screen and (max-height:640px) and (orientation:portrait) {
+    .skills-info{
+        font-size: 13px;
+    }
+}
+
 @media screen and (min-height:740px) and (orientation:portrait) {
     .skills-left {
         margin-top: -15px

@@ -680,17 +680,37 @@ section {
     #fp-nav ul li {
         margin: 0 0 32px;
     }
+
+    .spinner {
+        top: 45%;
+        left: 41%;
+    }
 }
 
 @media screen and (max-width: 385px) {
     #menu-links li a {
         font-size: 42px;
     }
+
+    .spinner {
+        top: 45%;
+        left: 42%;
+    }
+
+    .menu-wrap .hamburger {
+        width: 30px;
+        padding: -6px 0px;
+    }
 }
 
 @media screen and (max-width: 360px) {
     #menu-links li a {
         font-size: 42px;
+    }
+
+    .spinner {
+        top: 45%;
+        left: 40%;
     }
 }
 
