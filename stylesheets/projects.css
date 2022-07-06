@@ -185,6 +185,11 @@
     background-size: cover
 }
 
+.horizontal-scrolling:nth-child(2) .projects-item:nth-child(3) .project-content>.project-card {
+    background: url("../assets/images/untitled-zombie-game/landing.webp") 50% no-repeat;
+    background-size: cover
+}
+
 .project-content>.project-card2 {
     opacity: 0;
     width: 100%;

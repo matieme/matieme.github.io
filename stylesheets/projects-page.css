@@ -598,6 +598,31 @@ header .displayNone {
     background-size: cover;
 }
 
+.image48 {
+    background: url(../assets/images/untitled-zombie-game/1.webp) 50% no-repeat;
+    background-size: cover;
+}
+
+.image49 {
+    background: url(../assets/images/untitled-zombie-game/2.webp) 50% no-repeat;
+    background-size: cover;
+}
+
+.image50 {
+    background: url(../assets/images/untitled-zombie-game/3.webp) 50% no-repeat;
+    background-size: cover;
+}
+
+.image51 {
+    background: url(../assets/images/untitled-zombie-game/4.webp) 50% no-repeat;
+    background-size: cover;
+}
+
+.image52 {
+    background: url(../assets/images/untitled-zombie-game/5.webp) 50% no-repeat;
+    background-size: cover;
+}
+
 .owl-prev {
     left: 0 !important;
 }
